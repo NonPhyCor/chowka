@@ -8,9 +8,9 @@ The application's capabilities include:
 The Chosen One is a platform independent, open source application deployed on vercel and can be accessed at https://chowka.vercel.app and is compatible with any web browser.
 
 File Structure:
-Repogenesis/chowka
-|
-|_script.js
-|_styles.css
-|_index.html
-|_readme.md
+Repogenesis/chowka<br>
+|<br>
+|_script.js<br>
+|_styles.css<br>
+|_index.html<br>
+|_readme.md<br>
