@@ -4,6 +4,7 @@ The application's capabilities include:
  1. Generating digital wills of intent that are downloadable.
  2. Generating emails containing user codes
  3. Securely managing sensitive information using shards on sss and node.js crypto.
+ 4. Uses state of the art AES-256 encryption algorithm to secure user data. 
 
 The Chosen One is a platform independent, open source application deployed on vercel and can be accessed at https://chowka.vercel.app and is compatible with any web browser.
 
