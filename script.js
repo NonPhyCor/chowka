@@ -2,12 +2,12 @@ import { SpotifyApi } from 'https://esm.sh/@spotify/web-api-ts-sdk';
 
 // --- 0. CONFIG & GLOBALS ---
 const { createClient } = window.supabase;
-const SUPABASE_URL = 'https://wdfeuvohnoxtxnoziodf.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndkZmV1dm9obm94dHhub3ppb2RmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3MDk0MTksImV4cCI6MjA3OTI4NTQxOX0.baLmbnJZUjcevDmnHA1oG3xTzXT5sNlDzZ45Uq57VsM';
+const SUPABASE_URL = 'your-supabase-url';
+const SUPABASE_KEY = 'your-supabase-key';
 const sb = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // Spotify Config
-const spotifyClientId = "ab41714aae7440cb93a78779ba389daa";
+const spotifyClientId = "your-spotify-api-key";
 const spotifyRedirectUrl = window.location.href.split('?')[0];
 const spotifyScopes = ["user-read-private", "user-read-email", "user-read-recently-played"];
 const spotifySdk = SpotifyApi.withUserAuthorization(spotifyClientId, spotifyRedirectUrl, spotifyScopes);
@@ -895,4 +895,5 @@ function updateThemeIcons(theme) {
     const iconName = theme === 'dark' ? 'light_mode' : 'dark_mode';
     const icons = document.querySelectorAll('[id^="theme-icon"]');
     icons.forEach(icon => icon.innerText = iconName);
+
 }
